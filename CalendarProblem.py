@@ -53,6 +53,7 @@ def getMeetingSlots(calendar1, calendar1Range, calendar2, calendar2Range, meetin
     # If there is and the overlap is at least as long as the meeting time,then add it to the meeting slots
     for slot1 in availableSlots1:
         for slot2 in availableSlots2:
+            # here the code gives me the overlapping time range between the two time slots
             startTime = max(datetime.strptime(slot1[0], '%H:%M'), datetime.strptime(slot2[0], '%H:%M'))
             endTime = min(datetime.strptime(slot1[1], '%H:%M'), datetime.strptime(slot2[1], '%H:%M'))
             if (endTime - startTime) >= timedelta(minutes=meetingTime):
