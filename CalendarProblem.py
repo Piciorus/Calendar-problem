@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 
-
+# This function calculates the available time slots for scheduling a meeting
 def getAvailableSlotsFromCalendar(calendar, rangeCalendar, meetingTime):
     """
     :param calendar: list of lists of strings,which represent the calendar with the meetings time
@@ -35,7 +35,8 @@ def getAvailableSlotsFromCalendar(calendar, rangeCalendar, meetingTime):
                     availableSlots.append(freeSlot)
     return availableSlots
 
-
+# This function calculates the available time slots in the calendar where meetings
+# could potentially be scheduled, given a specified meeting duration.
 def getMeetingSlots(calendar1, calendar1Range, calendar2, calendar2Range, meetingTime):
     """
     :param calendar1:  list of lists of strings,which represent the calendar with the meetings time from the person1
