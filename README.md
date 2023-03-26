@@ -1,0 +1,2 @@
+# Calendar-problem
+This repository contains a Python script that can be used to find available meeting slots between two people based on their calendars.The script finds the available time slots in each person's calendar and checks for overlaps to find meeting slots that are at least as long as the specified meeting time. The output is a list of lists of strings representing the start and end time of the available meeting slots.
